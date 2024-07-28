@@ -21,7 +21,7 @@ To implement movement, we can create a node on homebase to send out our controls
 
 To implement the camera feed, we can do a something similar. We create a node on the rover called `camera_publisher` and a node on homebase to listen to the footage called `camera_subscriber`.
 
->> Note: these names are actually really bad in production for reasons I will get into later.
+> Note: these names are actually really bad in production for reasons I will get into later.
 
 However, how does each node know what to listen to? The nodes that handle the movement of the rover don't need the camera footage, and vice versa. 
 
@@ -33,7 +33,7 @@ A topic is exactly what it sounds like. It helps us sort the information that th
 
 Publishers usually **continuously** send out information as a stream, and subscribers usually receive everything they can. 
 
-![](https://docs.ros.org/en/humble/_images/Nodes-TopicandService.gif)
+![topic example gif](https://docs.ros.org/en/humble/_images/Nodes-TopicandService.gif)
 
 ### Topic Example: Homebase + Rover
 
@@ -51,4 +51,28 @@ Imagine that we decide to add an arm to the rover. Now, the homebase needs to al
 
 Since controlling the arm is still related to `/controls` but is not related to the controls for the movement, we can create the subtopics `/controls/arm` and `/controls/movement` to differentiate the two. We can then create the required nodes on the rover and homebase.
 
-*Note: Now, we have to rename the controls_subscriber and controls_publisher nodes.
+> Note: Now, we have to rename the controls_subscriber and controls_publisher nodes.
+
+## What is a "service"?
+
+A service is another way nodes can communicate with each other. Services are based on **calls** and **responses**.
+
+Compared to topics, services are more “precise” with the information they send. A **client node** can **call** a service, and a **server node** will respond to that specific client. 
+
+- With topics, all subscribers can receive information from all publishers
+
+The server node will also only send out information if it receives a call from another client node.
+
+- With topics, all publishers continuously send out information regardless if there are any subscribers.
+
+![Service example gif](https://docs.ros.org/en/humble/_images/Service-MultipleServiceClient.gif)
+
+### Service Example: Homebase + Rover
+
+Imagine now we need to implement a form of autonomous navigation. We send the rover a GPS coordinate, and the rover should move to that location, then tell us when it reaches its destination.
+
+To do this, we can create a service called `/gps_nav`, where the rover is the server, and the homebase is the client.
+
+The client will then call the `/gps_nav` service with the coordinates as parameters, and the rover should move accordingly. Once the rover reaches the destination, it should respond to the homebase with a status message.
+
+> Note: Some services can actually have empty calls and responses. Sometimes we just need the service to activate a process on the server, and the client doesn’t care about a response.
