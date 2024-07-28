@@ -1,5 +1,12 @@
 # Intro to ROS: Nodes, Topics, and Services
 
+**This doc is heavily condensed and should only serve as a primer for the following articles**
+
+1. [*Using `turtlesim`, `ros2`, and `rqt`](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html)  
+1. [*Understanding nodes*](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)  
+1. [*Understanding topics*](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)  
+1. [*Understanding services*](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
+
 ROS stands for Robot Operating System. It is not actually an OS, but rather a framework for developing software for robotics.
 For our project, we will be using ROS2 Humble.
 
