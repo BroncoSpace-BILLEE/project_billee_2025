@@ -23,3 +23,9 @@ This strategy ensures all changes are handled properly, and that we always have 
 	2. Typically, final touches, bug-fixes, documentation, is done here.
 	3. A double merge into `main` and `develop` finishes the release.
 5. `hotfix`: this branch is used very sparingly. Only used when a bug is discovered in `main`. This branch is used to fix that bug, then merge back into `main` and `develop`.
+
+## Merging, Pull Requests, and Issues
+
+All merging should be done through pull requests.
+
+Issues is where we track all our "tasks".
