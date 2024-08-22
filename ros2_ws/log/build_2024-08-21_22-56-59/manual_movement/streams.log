@@ -1,0 +1,24 @@
+[0.472s] Invoking command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/src/manual_movement': PYTHONPATH=/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/manual_movement build --build-base /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/build install --record /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/install.log --single-version-externally-managed install_data
+[0.651s] running egg_info
+[0.651s] writing ../../build/manual_movement/manual_movement.egg-info/PKG-INFO
+[0.652s] writing dependency_links to ../../build/manual_movement/manual_movement.egg-info/dependency_links.txt
+[0.652s] writing entry points to ../../build/manual_movement/manual_movement.egg-info/entry_points.txt
+[0.652s] writing requirements to ../../build/manual_movement/manual_movement.egg-info/requires.txt
+[0.652s] writing top-level names to ../../build/manual_movement/manual_movement.egg-info/top_level.txt
+[0.653s] reading manifest file '../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+[0.654s] writing manifest file '../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+[0.654s] running build
+[0.654s] running build_py
+[0.654s] copying manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/build/lib/manual_movement
+[0.654s] running install
+[0.655s] running install_lib
+[0.655s] copying /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/build/lib/manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement
+[0.656s] byte-compiling /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement/converter.py to converter.cpython-310.pyc
+[0.656s] running install_data
+[0.656s] running install_egg_info
+[0.658s] removing '/home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement-0.0.0-py3.10.egg-info' (and everything under it)
+[0.658s] Copying ../../build/manual_movement/manual_movement.egg-info to /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement-0.0.0-py3.10.egg-info
+[0.659s] running install_scripts
+[0.676s] Installing converter script to /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/manual_movement
+[0.676s] writing list of installed files to '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/install.log'
+[0.704s] Invoked command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/src/manual_movement' returned '0': PYTHONPATH=/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/manual_movement build --build-base /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/build install --record /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/install.log --single-version-externally-managed install_data

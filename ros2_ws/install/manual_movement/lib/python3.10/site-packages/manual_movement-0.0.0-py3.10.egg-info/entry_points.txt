@@ -1,0 +1,3 @@
+[console_scripts]
+converter = manual_movement.converter:main
+

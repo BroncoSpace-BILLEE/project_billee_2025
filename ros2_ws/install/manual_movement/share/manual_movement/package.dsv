@@ -1,0 +1,3 @@
+source;share/manual_movement/hook/pythonpath.ps1
+source;share/manual_movement/hook/pythonpath.dsv
+source;share/manual_movement/hook/pythonpath.sh

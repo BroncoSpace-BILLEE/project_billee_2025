@@ -1,0 +1,38 @@
+[0.000000] (-) TimerEvent: {}
+[0.000150] (manual_movement) JobQueued: {'identifier': 'manual_movement', 'dependencies': OrderedDict()}
+[0.000177] (manual_movement) JobStarted: {'identifier': 'manual_movement'}
+[0.099355] (-) TimerEvent: {}
+[0.199877] (-) TimerEvent: {}
+[0.300439] (-) TimerEvent: {}
+[0.400753] (-) TimerEvent: {}
+[0.474981] (manual_movement) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/manual_movement', 'build', '--build-base', '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/build', 'install', '--record', '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sam/Documents/code/project_billee_2025/ros2_ws/src/manual_movement', 'env': {'USER': 'sam', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'OLDPWD': '/home/sam/Documents/code/project_billee_2025/ros2_ws/src/manual_movement', 'HOME': '/home/sam', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '177335', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'P9K_TTY': 'old', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'WAYLAND_DISPLAY': 'wayland-0', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/sam/Documents/code/project_billee_2025/ros2_ws/install', 'LOGNAME': 'sam', '_': '/usr/bin/colcon', '_P9K_SSH_TTY': '/dev/pts/0', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'sam', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sam-ideapad:@/tmp/.ICE-unix/177318,unix/sam-ideapad:/tmp/.ICE-unix/177318', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2ae0519a_184a_4e29_94f9_72a0178db7dd', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.1689', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.Q9XJR2', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'AMENT_PREFIX_PATH': '/home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement:/opt/ros/humble', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'P9K_SSH': '0', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', '_P9K_TTY': '/dev/pts/0', 'PYTHONPATH': '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages:/home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.501063] (-) TimerEvent: {}
+[0.601471] (-) TimerEvent: {}
+[0.657705] (manual_movement) StdoutLine: {'line': b'running egg_info\n'}
+[0.658063] (manual_movement) StdoutLine: {'line': b'writing ../../build/manual_movement/manual_movement.egg-info/PKG-INFO\n'}
+[0.658275] (manual_movement) StdoutLine: {'line': b'writing dependency_links to ../../build/manual_movement/manual_movement.egg-info/dependency_links.txt\n'}
+[0.658880] (manual_movement) StdoutLine: {'line': b'writing entry points to ../../build/manual_movement/manual_movement.egg-info/entry_points.txt\n'}
+[0.659110] (manual_movement) StdoutLine: {'line': b'writing requirements to ../../build/manual_movement/manual_movement.egg-info/requires.txt\n'}
+[0.659275] (manual_movement) StdoutLine: {'line': b'writing top-level names to ../../build/manual_movement/manual_movement.egg-info/top_level.txt\n'}
+[0.660329] (manual_movement) StdoutLine: {'line': b"reading manifest file '../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'\n"}
+[0.661014] (manual_movement) StdoutLine: {'line': b"writing manifest file '../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'\n"}
+[0.661169] (manual_movement) StdoutLine: {'line': b'running build\n'}
+[0.661243] (manual_movement) StdoutLine: {'line': b'running build_py\n'}
+[0.661376] (manual_movement) StdoutLine: {'line': b'copying manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/build/lib/manual_movement\n'}
+[0.661500] (manual_movement) StdoutLine: {'line': b'running install\n'}
+[0.661668] (manual_movement) StdoutLine: {'line': b'running install_lib\n'}
+[0.662231] (manual_movement) StdoutLine: {'line': b'copying /home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/build/lib/manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement\n'}
+[0.662659] (manual_movement) StdoutLine: {'line': b'byte-compiling /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement/converter.py to converter.cpython-310.pyc\n'}
+[0.663049] (manual_movement) StdoutLine: {'line': b'running install_data\n'}
+[0.663244] (manual_movement) StdoutLine: {'line': b'copying package.xml -> /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/share/manual_movement\n'}
+[0.663387] (manual_movement) StdoutLine: {'line': b'copying launch/mm_turtlesim.launch.py -> /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/share/manual_movement/launch\n'}
+[0.663466] (manual_movement) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.664638] (manual_movement) StdoutLine: {'line': b"removing '/home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.664975] (manual_movement) StdoutLine: {'line': b'Copying ../../build/manual_movement/manual_movement.egg-info to /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/python3.10/site-packages/manual_movement-0.0.0-py3.10.egg-info\n'}
+[0.665710] (manual_movement) StdoutLine: {'line': b'running install_scripts\n'}
+[0.683238] (manual_movement) StdoutLine: {'line': b'Installing converter script to /home/sam/Documents/code/project_billee_2025/ros2_ws/install/manual_movement/lib/manual_movement\n'}
+[0.683579] (manual_movement) StdoutLine: {'line': b"writing list of installed files to '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/manual_movement/install.log'\n"}
+[0.701601] (-) TimerEvent: {}
+[0.711612] (manual_movement) CommandEnded: {'returncode': 0}
+[0.720157] (manual_movement) JobEnded: {'identifier': 'manual_movement', 'rc': 0}
+[0.721041] (-) EventReactorShutdown: {}
