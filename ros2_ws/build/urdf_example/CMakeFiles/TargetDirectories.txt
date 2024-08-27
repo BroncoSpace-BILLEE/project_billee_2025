@@ -1,0 +1,9 @@
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/uninstall.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/urdf_example_uninstall.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/test.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/edit_cache.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/rebuild_cache.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/list_install_components.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/install.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/install/local.dir
+/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example/CMakeFiles/install/strip.dir

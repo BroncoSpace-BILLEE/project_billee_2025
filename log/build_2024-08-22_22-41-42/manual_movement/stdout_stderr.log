@@ -1,0 +1,37 @@
+running egg_info
+creating ../../../build/manual_movement/manual_movement.egg-info
+writing ../../../build/manual_movement/manual_movement.egg-info/PKG-INFO
+writing dependency_links to ../../../build/manual_movement/manual_movement.egg-info/dependency_links.txt
+writing entry points to ../../../build/manual_movement/manual_movement.egg-info/entry_points.txt
+writing requirements to ../../../build/manual_movement/manual_movement.egg-info/requires.txt
+writing top-level names to ../../../build/manual_movement/manual_movement.egg-info/top_level.txt
+writing manifest file '../../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+reading manifest file '../../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+writing manifest file '../../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sam/Documents/code/project_billee_2025/build/manual_movement/build
+creating /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib
+creating /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement
+copying manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement
+copying manual_movement/__init__.py -> /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement
+running install
+running install_lib
+creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement
+copying /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement
+copying /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement/__init__.py -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement
+byte-compiling /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement/converter.py to converter.cpython-310.pyc
+byte-compiling /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index
+creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index/resource_index
+creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index/resource_index/packages
+copying resource/manual_movement -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index/resource_index/packages
+copying package.xml -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/manual_movement
+creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/manual_movement/launch
+copying launch/mm_turtlesim.launch.py -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/manual_movement/launch
+running install_egg_info
+Copying ../../../build/manual_movement/manual_movement.egg-info to /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement-0.0.0-py3.10.egg-info
+running install_scripts
+Installing converter script to /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/manual_movement
+writing list of installed files to '/home/sam/Documents/code/project_billee_2025/build/manual_movement/install.log'

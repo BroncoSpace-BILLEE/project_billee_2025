@@ -1,0 +1,39 @@
+[0.484s] Invoking command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/src/manual_movement': PYTHONPATH=/home/sam/Documents/code/project_billee_2025/build/manual_movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/manual_movement build --build-base /home/sam/Documents/code/project_billee_2025/build/manual_movement/build install --record /home/sam/Documents/code/project_billee_2025/build/manual_movement/install.log --single-version-externally-managed install_data
+[0.663s] running egg_info
+[0.664s] creating ../../../build/manual_movement/manual_movement.egg-info
+[0.664s] writing ../../../build/manual_movement/manual_movement.egg-info/PKG-INFO
+[0.664s] writing dependency_links to ../../../build/manual_movement/manual_movement.egg-info/dependency_links.txt
+[0.664s] writing entry points to ../../../build/manual_movement/manual_movement.egg-info/entry_points.txt
+[0.664s] writing requirements to ../../../build/manual_movement/manual_movement.egg-info/requires.txt
+[0.664s] writing top-level names to ../../../build/manual_movement/manual_movement.egg-info/top_level.txt
+[0.664s] writing manifest file '../../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+[0.665s] reading manifest file '../../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+[0.666s] writing manifest file '../../../build/manual_movement/manual_movement.egg-info/SOURCES.txt'
+[0.666s] running build
+[0.666s] running build_py
+[0.666s] creating /home/sam/Documents/code/project_billee_2025/build/manual_movement/build
+[0.666s] creating /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib
+[0.666s] creating /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement
+[0.666s] copying manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement
+[0.666s] copying manual_movement/__init__.py -> /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement
+[0.666s] running install
+[0.667s] running install_lib
+[0.667s] creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement
+[0.667s] copying /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement/converter.py -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement
+[0.667s] copying /home/sam/Documents/code/project_billee_2025/build/manual_movement/build/lib/manual_movement/__init__.py -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement
+[0.668s] byte-compiling /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement/converter.py to converter.cpython-310.pyc
+[0.668s] byte-compiling /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement/__init__.py to __init__.cpython-310.pyc
+[0.668s] running install_data
+[0.668s] creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index
+[0.669s] creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index/resource_index
+[0.669s] creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index/resource_index/packages
+[0.669s] copying resource/manual_movement -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/ament_index/resource_index/packages
+[0.669s] copying package.xml -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/manual_movement
+[0.669s] creating /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/manual_movement/launch
+[0.669s] copying launch/mm_turtlesim.launch.py -> /home/sam/Documents/code/project_billee_2025/install/manual_movement/share/manual_movement/launch
+[0.669s] running install_egg_info
+[0.670s] Copying ../../../build/manual_movement/manual_movement.egg-info to /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages/manual_movement-0.0.0-py3.10.egg-info
+[0.671s] running install_scripts
+[0.688s] Installing converter script to /home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/manual_movement
+[0.689s] writing list of installed files to '/home/sam/Documents/code/project_billee_2025/build/manual_movement/install.log'
+[0.716s] Invoked command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/src/manual_movement' returned '0': PYTHONPATH=/home/sam/Documents/code/project_billee_2025/build/manual_movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sam/Documents/code/project_billee_2025/install/manual_movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/manual_movement build --build-base /home/sam/Documents/code/project_billee_2025/build/manual_movement/build install --record /home/sam/Documents/code/project_billee_2025/build/manual_movement/install.log --single-version-externally-managed install_data
