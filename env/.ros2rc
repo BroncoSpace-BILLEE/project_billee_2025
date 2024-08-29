@@ -2,7 +2,7 @@ source /opt/ros/humble/setup.zsh
 
 # this colcon_cd shit don't work
 source /usr/share/colcon_cd/function/colcon_cd.sh
-source /usr/share/colcon_argcomplete/hook
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh
 export _colcon_cd_root=/opt/ros/humble/
 
 LICENSE="Apache-2.0"
