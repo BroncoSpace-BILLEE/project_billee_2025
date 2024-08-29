@@ -1,6 +1,0 @@
-source;share/manual_movement/hook/pythonpath.ps1
-source;share/manual_movement/hook/pythonpath.dsv
-source;share/manual_movement/hook/pythonpath.sh
-source;share/manual_movement/hook/ament_prefix_path.ps1
-source;share/manual_movement/hook/ament_prefix_path.dsv
-source;share/manual_movement/hook/ament_prefix_path.sh
