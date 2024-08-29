@@ -1,4 +1,0 @@
-Invoking command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example -- -j16 -l16
-Invoked command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example -- -j16 -l16
-Invoking command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example
-Invoked command in '/home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sam/Documents/code/project_billee_2025/ros2_ws/build/urdf_example
