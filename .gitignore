@@ -1,2 +1,8 @@
 .obsidian
 .DS_Store
+
+**/build/
+**/log/
+**/install/
+
+**/__pycache__/
