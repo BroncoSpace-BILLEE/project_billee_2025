@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm">
+    
+    <link name="world"/>
+    
+    <joint name="base_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </joint>
+    
+    
+    <xacro:property name="base_length" value="2.5"/>
+    <xacro:property name="base_width" value="1.5"/>
+`    <xacro:property name="base_height" value=".1"/>
+    <link name="base_link">
+
+        <visual>
+            <origin xyz="0.0 0.0 ${base_height/2}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 ${base_height/2}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="axis1" type="revolute">
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.14159" upper="3.14159" velocity="50.0" effort="1000.0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    
+    <xacro:property name="link1_length" value="0.5"/>
+    <xacro:property name="link1_width" value="0.25"/>
+    <xacro:property name="link1_height" value="0.15"/>
+    <link name="link1">
+        <visual>
+            <origin xyz="0.0 0.0 ${base_height + (link1_height / 2)}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="${link1_width}" length="${link1_height}"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 ${link1_length / 2}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="${link1_width}" length="${link1_height}"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="axis2" type="revolute">
+        <parent link="link1"/>
+        <child link="link2"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-3.14159" upper="3.14159" velocity="50.0" effort="1000.0"/>
+        <origin xyz="0 0 ${base_height + link1_height}" rpy="0 0 0"/>
+    </joint>
+
+    <xacro:property name="link2_length" value="1"/>
+    <xacro:property name="link2_width" value="0.25"/>
+    <xacro:property name="link2_height" value="0.25"/>   
+    <link name="link2">
+        <visual>
+            <origin xyz="0.0 0.0 ${link2_length / 2}" rpy="0.0 ${pi / 2} 0.0"/>
+            <geometry>
+                <box size="${link2_length} ${link2_width} ${link2_height}"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 ${link2_length / 2}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${link2_length} ${link2_width} ${link2_height}"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="axis3" type="revolute">
+        <parent link="link2"/>
+        <child link="link3"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-3.14159" upper="3.14159" velocity="50.0" effort="1000.0"/>
+        <origin xyz="0 0 ${link2_length}" rpy="0 0 0"/>
+    </joint>
+    
+
+    <xacro:property name="link3_length" value="1"/>
+    <xacro:property name="link3_width" value="0.25"/>
+    <xacro:property name="link3_height" value="0.25"/>   
+    <link name="link3">
+        <visual>
+            <origin xyz="0.0 0.0 ${link3_length / 2}" rpy="0.0 ${pi / 2} 0.0"/>
+            <geometry>
+                <box size="${link3_length} ${link3_width} ${link3_height}"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 ${link2_length / 2}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${link3_length} ${link3_width} ${link3_height}"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <joint name="axis4" type="revolute">
+        <parent link="link3"/>
+        <child link="link4"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-3.14159" upper="3.14159" velocity="50.0" effort="1000.0"/>
+        <origin xyz="0 0 ${link3_length}" rpy="0 0 0"/>
+    </joint>
+    
+    <xacro:property name="link4_length" value="0.25"/>
+    <xacro:property name="link4_width" value="0.25"/>
+    <xacro:property name="link4_height" value="0.25"/>   
+    <link name="link4">
+        <visual>
+            <origin xyz="0.0 0.0 ${link4_length / 2}" rpy="0.0 ${pi / 2} 0.0"/>
+            <geometry>
+                <box size="${link4_length} ${link4_width} ${link4_height}"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 ${link3_length / 2}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${link4_length} ${link4_width} ${link4_height}"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="axis5" type="revolute">
+        <parent link="link4"/>
+        <child link="link5"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.14159" upper="3.14159" velocity="50.0" effort="1000.0"/>
+        <origin xyz="0 0 ${link4_length}" rpy="0 0 0"/>
+    </joint>
+    
+    <xacro:property name="link5_length" value="0.25"/>
+    <xacro:property name="link5_width" value="0.25"/>
+    <xacro:property name="link5_height" value="0.25"/>   
+    <link name="link5">
+        <visual>
+            <origin xyz="0.0 0.0 ${link5_length / 2}" rpy="0.0 ${pi / 2} 0.0"/>
+            <geometry>
+                <box size="${link5_length} ${link5_width} ${link5_height}"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 ${link4_length / 2}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${link5_length} ${link5_width} ${link5_height}"/>
+            </geometry>
+        </collision>
+    </link>
+
+</robot>
