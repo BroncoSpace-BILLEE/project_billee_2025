@@ -8,19 +8,19 @@
     <xacro:property name="link1_length" value="0.1"/>
     <xacro:property name="link1_radius" value="0.25"/>
 
-    <xacro:property name="link2_length" value="1"/>
+    <xacro:property name="link2_length" value="0.7"/>
     <xacro:property name="link2_width" value="0.25"/>
     <xacro:property name="link2_height" value="0.25"/>   
 
-    <xacro:property name="link3_length" value="1"/>
+    <xacro:property name="link3_length" value=".45"/>
     <xacro:property name="link3_width" value="0.25"/>
     <xacro:property name="link3_height" value="0.25"/>   
 
-    <xacro:property name="link4_length" value="0.25"/>
+    <xacro:property name="link4_length" value="0.354"/>
     <xacro:property name="link4_width" value="0.25"/>
     <xacro:property name="link4_height" value="0.25"/>   
 
-    <xacro:property name="link5_length" value="0.25"/>
+    <xacro:property name="link5_length" value="0.225"/>
     <xacro:property name="link5_width" value="0.25"/>
     <xacro:property name="link5_height" value="0.25"/>   
     
