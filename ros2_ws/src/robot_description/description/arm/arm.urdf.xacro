@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm">
 
     <xacro:include filename="dimensions.xacro"/>
+    <xacro:include filename="../materials.xacro"/>
     
     
     <link name="world"/>
@@ -20,6 +21,8 @@
             <geometry>
                 <box size="${base_length} ${base_width} ${base_height}"/>
             </geometry>
+
+            <material name="blue"></material>
         </visual>
 
         <collision>
@@ -44,6 +47,8 @@
             <geometry>
                 <cylinder radius="${link1_radius}" length="${link1_length}"/>
             </geometry>
+
+            <material name="orange"></material>
         </visual>
 
         <collision>
@@ -68,6 +73,8 @@
             <geometry>
                 <box size="${link2_length} ${link2_width} ${link2_height}"/>
             </geometry>
+
+            <material name="green"></material>
         </visual>
 
         <collision>
@@ -92,6 +99,8 @@
             <geometry>
                 <box size="${link3_length} ${link3_width} ${link3_height}"/>
             </geometry>
+
+            <material name="magenta"></material>
         </visual>
 
         <collision>
@@ -116,6 +125,8 @@
             <geometry>
                 <box size="${link4_length} ${link4_width} ${link4_height}"/>
             </geometry>
+
+            <material name="cyan"></material>
         </visual>
 
         <collision>
@@ -140,6 +151,8 @@
             <geometry>
                 <box size="${link5_length} ${link5_width} ${link5_height}"/>
             </geometry>
+
+            <material name="white"></material>
         </visual>
 
         <collision>
