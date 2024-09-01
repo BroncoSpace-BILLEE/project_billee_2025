@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="base_length" value="2.5"/>
+    <xacro:property name="base_width" value="1.5"/>
+    <xacro:property name="base_height" value="0"/>
+
+    <xacro:property name="link1_length" value="0.1"/>
+    <xacro:property name="link1_radius" value="0.25"/>
+
+    <xacro:property name="link2_length" value="0.7"/>
+    <xacro:property name="link2_width" value="0.25"/>
+    <xacro:property name="link2_height" value="0.25"/>   
+
+    <xacro:property name="link3_length" value=".45"/>
+    <xacro:property name="link3_width" value="0.25"/>
+    <xacro:property name="link3_height" value="0.25"/>   
+
+    <xacro:property name="link4_length" value="0.354"/>
+    <xacro:property name="link4_width" value="0.25"/>
+    <xacro:property name="link4_height" value="0.25"/>   
+
+    <xacro:property name="link5_length" value="0.225"/>
+    <xacro:property name="link5_width" value="0.25"/>
+    <xacro:property name="link5_height" value="0.25"/>   
+    
+    <!-- Axis limits -->
+    <xacro:property name="axis1_lower" value="${-160 * (pi/180)}"/>
+    <xacro:property name="axis1_upper" value="${ 160 * (pi/180)}"/>
+
+    <xacro:property name="axis2_lower" value="${  12 * (pi/180)}"/>
+    <xacro:property name="axis2_upper" value="${  83 * (pi/180)}"/>
+
+    <xacro:property name="axis3_lower" value="${-140 * (pi/180)}"/>
+    <xacro:property name="axis3_upper" value="${ 140 * (pi/180)}"/>
+    
+    <xacro:property name="axis4_lower" value="${-140 * (pi/180)}"/>
+    <xacro:property name="axis4_upper" value="${ 140 * (pi/180)}"/>
+
+    <xacro:property name="axis5_lower" value="${-140 * (pi/180)}"/>
+    <xacro:property name="axis5_upper" value="${ 140 * (pi/180)}"/>
+    
+    
+    
+</robot>
