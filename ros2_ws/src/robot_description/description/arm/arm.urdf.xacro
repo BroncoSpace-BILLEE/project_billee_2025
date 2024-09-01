@@ -6,6 +6,8 @@
     <xacro:include filename="../inertias.xacro"/>
     
 
+    <xacro:include filename="gazebo.xacro"/>
+    
     <link name="world"></link>
     
     <joint name="base_joint" type="fixed">
