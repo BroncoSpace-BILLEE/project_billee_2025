@@ -13,7 +13,7 @@ import xacro
 def generate_launch_description():
 
     # Specify the name of the package and path to xacro file within the package
-    pkg_name = 'robot_description'
+    pkg_name = 'arm_sim'
     file_subpath = 'description/arm/arm.urdf.xacro'
 
 
