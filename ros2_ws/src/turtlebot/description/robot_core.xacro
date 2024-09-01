@@ -3,6 +3,7 @@
     
     <xacro:include filename="materials.xacro"/>
     <xacro:include filename="inertias.xacro"/>
+    <xacro:include filename="gazebo.xacro"/>
     
 
 
