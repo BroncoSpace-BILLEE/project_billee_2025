@@ -37,6 +37,15 @@ def generate_launch_description():
             get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
         )
 
+    joystick = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            [os.path.join(
+                get_package_share_directory('turtlebot'), 'launch')
+                , '/joystick.launch.py',
+            ]
+        )
+    )
+
 
     spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                     arguments=['-topic', 'robot_description',
@@ -47,7 +56,8 @@ def generate_launch_description():
     return LaunchDescription([
         gazebo,
         robot_state_publisher,
-        spawn_entity
+        spawn_entity,
+        joystick,
     ])
 
 
