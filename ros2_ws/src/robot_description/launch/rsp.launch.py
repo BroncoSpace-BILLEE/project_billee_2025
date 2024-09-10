@@ -8,7 +8,7 @@ import xacro
 def generate_launch_description():
 
     # Specify the name of the package and path to xacro file within the package
-    pkg_name = 'arm_sim'
+    pkg_name = 'robot_description'
     file_subpath = 'description/arm/arm.urdf.xacro'
 
 
@@ -25,14 +25,8 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description_raw}] # add other parameters here if required
     )
 
-    joint_state_publisher_gui = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-    )
-
 
     # Run the node
     return LaunchDescription([
-        robot_state_publisher_node,
-        joint_state_publisher_gui,
+        robot_state_publisher_node
     ])
