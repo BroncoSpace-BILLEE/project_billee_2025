@@ -56,3 +56,26 @@ To generate this message, Docker took the following steps:
 ```
 
 If you get the following error: `docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?`, then simply restart the docker daemon by running `sudo service docker restart` and try again.
+
+## Docker Images
+
+### Important Commands
+
+- `docker image ls` - displays all docker images installed on your machine
+- `docker image pull` - downloads the docker image from dockerhub
+- `docker image rm ` - removes docker image from your machine
+- `docker run` - spawns a container based on a docker image
+- `docker container ls` - list containers currently running
+- `docker container prune` - removes all stopped containers
+- `docker exec` - executes commands inside container
+
+### Inspecting Containers
+
+Using `docker run -it <image_name>`, you can run the container based on the image and execute commands in the container (`it` stands for interactive terminal)
+
+You can exit the container by typing `exit` or hitting `Ctrl + d` while inside the container
+
+You can also stop the container by typing `docker container stop` in the terminal. **This does not delete the container!** If you add the `rm` flag when running the container, it will auto delete the container upon stopping.
+
+
+
