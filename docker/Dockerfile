@@ -26,3 +26,4 @@ COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
 CMD ["bash"]
 
+WORKDIR /project_billee_2025
