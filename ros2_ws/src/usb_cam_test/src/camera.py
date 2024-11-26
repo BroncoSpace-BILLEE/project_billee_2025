@@ -43,7 +43,7 @@ class Camera:
     def cap_opened(self)->bool:
         return self.cap.isOpened()
 
-    def get_frame(self)->(bool, np.ndarray):
+    def get_frame(self):
         return self.cap.read()
 
     def get_compressed_data(self) -> list:
@@ -57,28 +57,12 @@ class Camera:
         compressed_data = self.bridge.cv2_to_compressed_imgmsg(frame, 'jpg').data
         img_data = np.asarray(compressed_data, dtype=np.uint8)
 
-        split_data = np.array_split(image_data, self.num_img_chunks)
+        split_data = np.array_split(img_data, self.num_img_chunks)
 
         return split_data
 
-
-def test_cam():
-    camera = Camera(1)
-    camera.start_cap()
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter('output.mp4', fourcc, float(camera.fps), (camera.frame_width, camera.frame_height))
-
-    while True:
-        (ret, frame) = camera.get_frame()
-
-        print(frame)
-
-        out.write(frame)
-
-        cv2.imshow('Camera', frame)
-
-
-
-    
-
+    def destroy_cap(self):
+        self.cap.release()
+        print(f'released capture feed for camera on port {self.usb_port}')
+        self.cap = None
 
