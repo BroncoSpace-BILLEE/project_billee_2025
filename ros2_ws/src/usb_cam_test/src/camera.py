@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from cv_bridge import CvBridge
 
 class Camera:
 
@@ -11,7 +12,7 @@ class Camera:
         self.fps = 30
         self.num_img_chunks = 3
         self.cap = None
-
+        self.bridge = CvBridge()
 
     def start_cap(self):
         if self.cap is not None:

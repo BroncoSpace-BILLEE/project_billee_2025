@@ -1,14 +1,17 @@
 import socket
 import signal
+
 import time
 import sys
+
 import argparse
+
 import rclpy
 from rclpy.node import Node
 from camera import Camera
 
 
-class CameraStreamer(Node):
+class CameraPublisher(Node):
 
 
     def __init__(self):
@@ -22,7 +25,7 @@ class CameraStreamer(Node):
         port = self.get_parameter('port').value
 
         self.server.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        server_address - ('192.168.1.11', port) #localhost
+        server_address = ('localhost', port)
         self.server_socket.bind(server_address)
 
         print(f'Started server at port {port}')
@@ -36,10 +39,29 @@ class CameraStreamer(Node):
         self.timer = self.create_timer(1/30, self.timer_callback) #run at every 1/30th of a second
 
     
-    def timeout_handler(self, signum, frame)
+    def timeout_handler(self, signum, frame):
+        self.camera.destroy_cap()
         raise TimeoutError()
 
     
+    def timer_callback(self):
 
+        signal.alarm(1)
 
+        #surround in try/catch later
 
+        data, address = self.server_socket.recvfrom(4096)
+
+        split_data = self.camera.get_compressed_data()
+
+        self.server_socket.sendto(split_data[0].tobytes(), address)
+        self.server_socket.recvfrom(4096)
+
+        self.server_socket.sendto(split_data[1].tobytes(), address)
+        self.server_socket.recvfrom(4096)
+
+        self.server_socket.sendto(split_data[2].tobytes(), address)
+        self.server_socket.recvfrom(4096)
+
+        print(f'Sent frame from usb camera {self.usb_port}')
+    
