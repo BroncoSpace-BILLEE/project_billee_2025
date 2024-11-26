@@ -8,9 +8,9 @@ def generate_launch_description():
 
     camera_node_1 = Node(
             package='usb_cam_test', 
-            executable='../src/cam_streamer',
-            name = 'camera_1_node',
-            parameters=[{'usb_port': 1, 'port': 8080}],
+            executable='cam_streamer',
+            name = 'cam_1_node',
+            parameters=[{'usb_port': 2, 'port': 8080}],
             )
 
     return LaunchDescription([

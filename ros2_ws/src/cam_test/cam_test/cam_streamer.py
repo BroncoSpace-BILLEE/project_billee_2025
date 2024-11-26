@@ -8,23 +8,26 @@ import argparse
 
 import rclpy
 from rclpy.node import Node
-from camera import Camera
+from cam_test.camera import Camera
 
 
 class CameraPublisher(Node):
 
 
     def __init__(self):
-        super().__init__('camera')
+        super().__init__('cam_streamer')
 
         
-        self.declare_parameter('usb_port', 1) #camera usb port
-        self.declare_parameter('port', 4096)
+        #self.declare_parameter('usb_port', 1) #camera usb port
+        #self.declare_parameter('port', 4096)
 
-        usb_port = self.get_parameter('usb_port').value
-        port = self.get_parameter('port').value
+        #usb_port = self.get_parameter('usb_port').value
+        #port = self.get_parameter('port').value
 
-        self.server.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        usb_port = 2
+        port = 8080
+
+        self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         server_address = ('localhost', port)
         self.server_socket.bind(server_address)
 
@@ -46,10 +49,10 @@ class CameraPublisher(Node):
     
     def timer_callback(self):
 
-        signal.alarm(1)
 
         #surround in try/catch later
 
+        print(f'Sending Data!')
         data, address = self.server_socket.recvfrom(4096)
 
         split_data = self.camera.get_compressed_data()
@@ -64,4 +67,19 @@ class CameraPublisher(Node):
         self.server_socket.recvfrom(4096)
 
         print(f'Sent frame from usb camera {self.usb_port}')
+
     
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    cam_streamer = CameraPublisher()
+    rclpy.spin(cam_streamer)
+
+    cam_streamer.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+

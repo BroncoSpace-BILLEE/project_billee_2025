@@ -67,3 +67,4 @@ class Camera:
         print(f'released capture feed for camera on port {self.usb_port}')
         self.cap = None
 
+
